@@ -41,4 +41,29 @@ public class TotalBillCalculatorTest {
         }
         
     }
+    
+    
+	/*	Test #2
+	 *  Numero degli elementi maggiore di quello permesso (20)
+	 * 
+	 */
+	
+    @org.junit.Rule
+    public ExpectedException exception = ExpectedException.none();
+    
+    @Test
+    public void NumberOfItemsExceeded20_Test() throws RestaurantBillException 
+    {
+    	exception.expect(RestaurantBillException.class);
+    	exception.expectMessage("Non possono esserci più di 20 elementi.");
+    	
+        List<MenuItem> itemsOrdered = new ArrayList<MenuItem>();
+        
+        for(int i = 1; i <= 25; i++)
+        	itemsOrdered.add(new MenuItem("item "+ i , MenuItem.items.PRIMO, 2.00 + i));
+        
+        TotalBillCalculator testBill = new TotalBillCalculator();
+        testBill.getOrderPrice(itemsOrdered);
+        
+    }
 }

@@ -9,11 +9,16 @@ public class TotalBillCalculator implements RestaurantBill{
 	
 	public double getOrderPrice(List<MenuItem> itemsOrdered) throws RestaurantBillException {
 		
-		double totalBill = 0;
+		double totalBill = 0.0;
 		
-		for(MenuItem x : itemsOrdered)
+		if(itemsOrdered.size() > 20)
+			throw new RestaurantBillException("Non possono esserci più di 20 elementi.");
+		else
 		{
-			totalBill += x.getPrice();
+			for(MenuItem x : itemsOrdered)
+			{
+				totalBill += x.getPrice();
+			}
 		}
 		
 		return totalBill;
