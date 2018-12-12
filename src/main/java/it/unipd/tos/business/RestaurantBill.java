@@ -11,5 +11,5 @@ import it.unipd.tos.model.MenuItem;
 
 public interface RestaurantBill {
 	
-	double getOrderPrice(List<MenuItem> itemsOrdered); //throws RestaurantBillException;
+	double getOrderPrice(List<MenuItem> itemsOrdered) throws RestaurantBillException;
 }

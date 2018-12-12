@@ -4,6 +4,16 @@
 
 package it.unipd.tos.business.exception;
 
-public class RestaurantBillException {
+public class RestaurantBillException extends Throwable {
 
+    private String error;
+
+    public String getError() {
+        return error;
+    }
+    
+    public RestaurantBillException(String e) {
+        this.error = e;
+    }
+	
 }
