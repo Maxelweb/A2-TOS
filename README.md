@@ -1,1 +1,14 @@
 # Mariano Sciacco - 1142498
+
+Assignment #2 - Tecnologie Open Source
+
+### Status delle Build
+
+[![Build Status](https://travis-ci.org/Maxelweb/A2-TOS.svg?branch=master)](https://travis-ci.org/Maxelweb/A2-TOS)
+
+
+### Copertura del codice
+
+[![Coverage 
+Status](https://coveralls.io/repos/github/Maxelweb/A2-TOS/badge.svg?branch=master)](https://coveralls.io/github/Maxelweb/A2-TOS?branch=master)
+
