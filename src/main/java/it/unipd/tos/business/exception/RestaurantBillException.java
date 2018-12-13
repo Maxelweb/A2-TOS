@@ -6,14 +6,14 @@ package it.unipd.tos.business.exception;
 
 public class RestaurantBillException extends Throwable {
 
-    private String error;
+    private String mex;
 
-    public String getError() {
-        return error;
+    public RestaurantBillException(String e) {
+        this.mex = e;
     }
     
-    public RestaurantBillException(String e) {
-        this.error = e;
+    public String getMessage() {
+        return this.mex;
     }
 	
 }

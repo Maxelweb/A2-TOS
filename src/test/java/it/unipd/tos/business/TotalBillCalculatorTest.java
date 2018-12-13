@@ -5,18 +5,15 @@ import it.unipd.tos.business.TotalBillCalculator;
 import it.unipd.tos.business.exception.RestaurantBillException;
 import it.unipd.tos.model.MenuItem;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.rules.ExpectedException;
 import static org.junit.Assert.assertEquals;
-
+import org.junit.rules.ExpectedException;
 import org.junit.Test;
 
 public class TotalBillCalculatorTest {
 
-	
 	/*	Test #1
 	 *  Calcolo totale della somma
 	 * 
@@ -37,7 +34,7 @@ public class TotalBillCalculatorTest {
         } 
         catch (RestaurantBillException e) 
         {
-            e.getError();
+            e.getMessage();
         }
         
     }
@@ -47,15 +44,15 @@ public class TotalBillCalculatorTest {
 	 *  Numero degli elementi maggiore di quello permesso (20)
 	 * 
 	 */
-	
+
     @org.junit.Rule
-    public ExpectedException exception = ExpectedException.none();
+	public ExpectedException exception = ExpectedException.none();
     
-    @Test
+    @org.junit.Test
     public void NumberOfItemsExceeded20_Test() throws RestaurantBillException 
     {
     	exception.expect(RestaurantBillException.class);
-    	exception.expectMessage("Non possono esserci più di 20 elementi.");
+    	exception.expectMessage("ERRORE: Non possono esserci più di 20 elementi.");
     	
         List<MenuItem> itemsOrdered = new ArrayList<MenuItem>();
         
@@ -64,6 +61,5 @@ public class TotalBillCalculatorTest {
         
         TotalBillCalculator testBill = new TotalBillCalculator();
         testBill.getOrderPrice(itemsOrdered);
-        
     }
 }

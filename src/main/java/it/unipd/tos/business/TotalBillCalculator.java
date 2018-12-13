@@ -12,7 +12,7 @@ public class TotalBillCalculator implements RestaurantBill{
 		double totalBill = 0.0;
 		
 		if(itemsOrdered.size() > 20)
-			throw new RestaurantBillException("Non possono esserci più di 20 elementi.");
+			throw new RestaurantBillException("ERRORE: Non possono esserci più di 20 elementi.");
 		else
 		{
 			for(MenuItem x : itemsOrdered)
