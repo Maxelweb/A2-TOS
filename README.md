@@ -2,7 +2,7 @@
 
 Assignment #2 - Tecnologie Open Source
 
-### Status delle Build
+### Status della Build corrente
 
 [![Build Status](https://travis-ci.org/Maxelweb/A2-TOS.svg?branch=master)](https://travis-ci.org/Maxelweb/A2-TOS)
 
