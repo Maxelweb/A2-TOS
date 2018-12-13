@@ -37,6 +37,11 @@ public class TotalBillCalculator implements RestaurantBill{
 			totalBill -= pizzaCostingLess;
 		}
 		
+		if(totalBill > 100.0)
+		{
+			totalBill *= 0.95;
+		}
+		
 		return totalBill;
 		
 	}
