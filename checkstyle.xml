@@ -6,7 +6,7 @@
 
 <module name="Checker">
 
-	<property name="severity" value="warning" />
+	<!-- <property name="severity" value="warning" />-->
 
 	<!-- Parent -->
 	<module name="TreeWalker">
@@ -71,7 +71,7 @@
 	
 	<!-- Controllo del TAB -->
 	<module name="FileTabCharacter">
-	  <property name="eachLine" value="true"/>
+	  <property name="eachLine" value="false"/>
 	</module>
 	
 	<!-- Header nei file -->

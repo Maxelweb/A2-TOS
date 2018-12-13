@@ -15,5 +15,4 @@ public class RestaurantBillException extends Throwable {
     public String getMessage() {
         return this.mex;
     }
-	
 }
