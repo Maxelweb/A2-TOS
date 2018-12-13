@@ -1,4 +1,7 @@
-# Mariano Sciacco - 1142498
+# QUESTA REPOSITORY E' SOLO DI TEST E PRIMO SVILUPPO
+- NUOVA: https://github.com/Maxelweb/A2-TOS-CI
+
+## Mariano Sciacco - 1142498
 
 Assignment #2 - Tecnologie Open Source
 
