@@ -8,16 +8,16 @@
 
 	<!-- <property name="severity" value="warning" />-->
 
-	<!-- Parent -->
+	<!-- Modulo padre -->
 	<module name="TreeWalker">
 	
-		<!-- Modulo Complessità espressione Booleana -->
+		<!-- Modulo complessità espressione booleana -->
 		<module name="BooleanExpressionComplexity">
 		  <property name="max" value="7"/>
 		</module>
 		        
 		        
-		<!-- Modulo per la complessita' -->        
+		<!-- Modulo per la complessita' dei cicli -->        
 		<module name="CyclomaticComplexity">
 		  <property name="max" value="15"/>
 		</module>
@@ -37,7 +37,7 @@
 		</module>
 		
 		
-		<!-- Blocchi di Eccezioni Catch vuoti -->
+		<!-- Blocchi di eccezioni Catch vuoti -->
 		<module name="EmptyCatchBlock">
 		  <property name="exceptionVariableName" value="expected|ignore"/>
 		</module>
@@ -71,7 +71,7 @@
 	
 	<!-- Controllo del TAB -->
 	<module name="FileTabCharacter">
-	  <property name="eachLine" value="false"/>
+	  <property name="eachLine" value="true"/>
 	</module>
 	
 	<!-- Header nei file -->
